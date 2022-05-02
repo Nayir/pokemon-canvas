@@ -324,11 +324,11 @@ window.addEventListener('keydown', (e) => {
   switch (e.key) {
     case 'z':
       keys.z.pressed = true
-      lastKey = 'w'
+      lastKey = 'z'
       break
-    case 'a':
+    case 'q':
       keys.q.pressed = true
-      lastKey = 'a'
+      lastKey = 'q'
       break
 
     case 's':
@@ -345,10 +345,10 @@ window.addEventListener('keydown', (e) => {
 
 window.addEventListener('keyup', (e) => {
   switch (e.key) {
-    case 'w':
+    case 'z':
       keys.z.pressed = false
       break
-    case 'a':
+    case 'q':
       keys.q.pressed = false
       break
     case 's':
