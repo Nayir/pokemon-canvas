@@ -13,8 +13,8 @@ document.querySelector("#app").innerHTML = ``;
 const canvas = document.querySelector("canvas");
 export const c = canvas.getContext("2d");
 
-canvas.width = 1024;
-canvas.height = 576;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 const collisionsMap = [];
 for (let i = 0; i < collisions.length; i += 70) {
@@ -82,8 +82,8 @@ playerRightImage.src = "./img/playerRight.png";
 
 const player = new Sprite({
   position: {
-    x: canvas.width / 2 - 192 / 4 / 2,
-    y: canvas.height / 2 - 68 / 2,
+    x: canvas.width / 2- 192 / 4 / 2,
+    y: canvas.height / 2.7 - 68 / 2,
   },
   image: playerDownImage,
   frames: {
