@@ -82,8 +82,8 @@ playerRightImage.src = "./img/playerRight.png";
 
 const player = new Sprite({
   position: {
-    x: canvas.width / 2- 192 / 4 / 2,
-    y: canvas.height / 2.7 - 68 / 2,
+    x: canvas.width / 2 - 192 / 4 / 2,
+    y: canvas.height / 2 - 68 / 2,
   },
   image: playerDownImage,
   frames: {
@@ -387,6 +387,10 @@ const battleBackground = new Sprite({
     y: 0,
   },
   image: battleBackgroundImage,
+  size: {
+    height: window.innerHeight,
+    width: window.innerWidth,
+  },
 });
 
 let draggle;
