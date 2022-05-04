@@ -11,10 +11,12 @@ export class Sprite {
     sprites,
     animate = false,
     rotation = 0,
+    size,
   }) {
     this.position = position;
     this.image = new Image();
     this.frames = { ...frames, val: 0, elapsed: 0 };
+    this.size = size;
     this.image.onload = () => {
       this.width = this.image.width / this.frames.max;
       this.height = this.image.height;
@@ -48,8 +50,8 @@ export class Sprite {
       this.image.height,
       this.position.x,
       this.position.y,
-      this.image.width / this.frames.max,
-      this.image.height
+      this.size ? this.size.width : this.image.width / this.frames.max,
+      this.size ? this.size.height : this.image.height
     );
     c.restore();
 
