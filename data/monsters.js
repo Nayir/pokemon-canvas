@@ -2,8 +2,8 @@ import { attacks } from "./attacks";
 export const monsters = {
   Emby: {
     position: {
-      x: 280,
-      y: 325,
+      x: 480,
+      y: 625,
     },
     image: {
       src: "./img/embySprite.png",
@@ -18,8 +18,8 @@ export const monsters = {
   },
   Draggle: {
     position: {
-      x: 800,
-      y: 100,
+      x: 1500,
+      y: 200,
     },
     image: {
       src: "./img/draggleSprite.png",
